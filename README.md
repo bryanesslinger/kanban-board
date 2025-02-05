@@ -1,6 +1,6 @@
 # Kanban Board App
 
-<img src="./assets/14-02-main-page.png" alt="Main Page Screenshot" width="800" />
+<img src="./Assets/14-02-main-page.png" alt="Main Page Screenshot" width="800" />
 
 ## Overview
 This is a simple yet secure Kanban board app designed for managing tasks. It requires user authentication using JSON Web Tokens (JWT) for secure login and session management. Users can create, update, and organize tasks within boards, but only after authenticating with a valid username and password.
