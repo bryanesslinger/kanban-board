@@ -49,8 +49,8 @@ class AuthService {
     logout() {
         //remove the token from localStorage
         localStorage.removeItem('id_token');
-        //redirect to the login page
-        window.location.href = '/login';
+        // //redirect to the login page
+        // window.location.href = '/login';
     }
 }
 export default new AuthService();

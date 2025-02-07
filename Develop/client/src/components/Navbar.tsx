@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../utils/auth';
 
 const Navbar = () => {
   const [ loginCheck, setLoginCheck ] = useState(false);
+  const navigate = useNavigate();
 
   const checkLogin = () => {
     if(auth.loggedIn()) {
       setLoginCheck(true);
+    } else {
+      setLoginCheck(false);
     }
   };
 
   useEffect(() => {
     console.log(loginCheck);
     checkLogin();
-  }, [loginCheck])
+  }, [])
 
   return (
     <div className='nav'>
@@ -33,6 +36,8 @@ const Navbar = () => {
           <li className='nav-item'>
             <button type='button' onClick={() => {
               auth.logout();
+              setLoginCheck(false); 
+              navigate('/login');
             }}>Logout</button>
           </li>
         )

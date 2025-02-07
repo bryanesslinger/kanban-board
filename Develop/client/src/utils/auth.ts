@@ -53,8 +53,8 @@ class AuthService {
   logout() {
     //remove the token from localStorage
     localStorage.removeItem('id_token');
-    //redirect to the home page
-    window.location.href = '/login';
+    // //redirect to the home page
+    // window.location.href = '/login';
   }
 }
 
