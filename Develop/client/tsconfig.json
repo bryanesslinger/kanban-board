@@ -15,7 +15,7 @@
     "jsx": "react-jsx",
 
      /* Add these to ensure React types are included */
-     "types": ["react", "react-dom", "react-router-dom"],
+     "types": ["react", "react-dom"],
 
     /* Linting */
     "strict": true,
